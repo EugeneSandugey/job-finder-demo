@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Jobs - Live from Indeed (Apify)</title>
+    <title>Teacher Jobs near 91342 - Live from Indeed</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -22,20 +22,14 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .subtitle {
+        .subtitle { text-align: center; color: #888; margin-bottom: 20px; font-size: 1.1rem; }
+        .location-badge {
             text-align: center;
-            color: #888;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-        .ref-code {
-            text-align: center;
-            background: rgba(123, 44, 191, 0.3);
+            background: rgba(255, 107, 107, 0.3);
             padding: 10px 20px;
             border-radius: 8px;
-            margin-bottom: 30px;
-            font-family: monospace;
-            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
         }
         .live-indicator {
             display: inline-flex;
@@ -47,8 +41,7 @@
             margin-bottom: 20px;
         }
         .live-dot {
-            width: 10px;
-            height: 10px;
+            width: 10px; height: 10px;
             background: #4ade80;
             border-radius: 50%;
             animation: pulse 1.5s infinite;
@@ -59,7 +52,7 @@
         }
         .jobs-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 20px;
         }
         .job-card {
@@ -77,173 +70,157 @@
             display: inline-block;
             background: linear-gradient(135deg, #00d4ff, #7b2cbf);
             color: white;
-            width: 35px;
-            height: 35px;
+            width: 32px; height: 32px;
             border-radius: 50%;
             text-align: center;
-            line-height: 35px;
+            line-height: 32px;
             font-weight: bold;
-            margin-bottom: 15px;
-        }
-        .job-title {
-            font-size: 1.3rem;
-            color: #00d4ff;
-            margin-bottom: 8px;
-            line-height: 1.3;
-        }
-        .job-company {
-            color: #fff;
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-        .job-location {
-            color: #888;
-            font-size: 0.95rem;
-            margin-bottom: 10px;
-        }
-        .job-salary {
-            color: #4ade80;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .job-rating {
-            color: #fbbf24;
+            margin-bottom: 12px;
             font-size: 0.9rem;
-            margin-bottom: 15px;
         }
-        .job-posted {
-            color: #a78bfa;
-            font-size: 0.85rem;
-            margin-bottom: 15px;
-        }
+        .job-title { font-size: 1.2rem; color: #00d4ff; margin-bottom: 8px; line-height: 1.3; }
+        .job-company { color: #fff; font-size: 1rem; margin-bottom: 5px; }
+        .job-location { color: #ff6b6b; font-size: 0.95rem; margin-bottom: 8px; }
+        .job-salary { color: #4ade80; font-size: 1rem; margin-bottom: 8px; font-weight: bold; }
+        .job-rating { color: #fbbf24; font-size: 0.85rem; margin-bottom: 8px; }
+        .job-posted { color: #a78bfa; font-size: 0.85rem; margin-bottom: 12px; }
         .apply-btn {
             display: inline-block;
             background: linear-gradient(135deg, #00d4ff, #7b2cbf);
             color: white;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 0.9rem;
+            transition: transform 0.2s;
         }
-        .apply-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
-        }
-        .job-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 15px;
-        }
-        .tag {
-            background: rgba(0,212,255,0.2);
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #00d4ff;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            color: #666;
-        }
+        .apply-btn:hover { transform: scale(1.05); }
         .powered-by {
-            margin-top: 20px;
+            margin-top: 30px;
             padding: 15px;
             background: rgba(123, 44, 191, 0.2);
             border-radius: 10px;
             text-align: center;
         }
-        .data-source {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #888;
-        }
+        .footer { text-align: center; margin-top: 30px; color: #666; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🎓 Teacher Jobs</h1>
-        <p class="subtitle">Live Job Listings Scraped from Indeed via Apify</p>
+        <p class="subtitle">Working with Kids • Near ZIP 91342</p>
+
+        <div class="location-badge">📍 Los Angeles Area: Burbank, Glendale, Woodland Hills, Pasadena, UCLA</div>
 
         <div style="text-align: center;">
             <div class="live-indicator">
                 <span class="live-dot"></span>
-                <span>LIVE DATA - Scraped Nov 27, 2025 at 12:56 PM PST</span>
+                <span>LIVE - Scraped from Indeed via Apify</span>
             </div>
         </div>
-
-        <div class="ref-code">Reference: 9-1342 | Data Source: Indeed.com via Apify API</div>
 
         <div class="jobs-grid">
             <div class="job-card">
                 <span class="job-number">1</span>
-                <h2 class="job-title">Special Education Teacher - SPED</h2>
-                <p class="job-company">PediaStaff</p>
-                <p class="job-location">📍 Juneau, AK 99801</p>
-                <p class="job-salary">💰 $45 - $60/hour</p>
-                <p class="job-rating">⭐ 4.6/5 (22 reviews)</p>
+                <h2 class="job-title">Lead Teacher</h2>
+                <p class="job-company">UCLA</p>
+                <p class="job-location">📍 Los Angeles, CA 90024</p>
+                <p class="job-salary">💰 $27.71 - $47.61/hour</p>
+                <p class="job-rating">⭐ 4.3/5</p>
                 <p class="job-posted">🕐 Just posted</p>
-                <a href="https://www.indeed.com/viewjob?jk=69f1b71e52635ca3" target="_blank" class="apply-btn">Apply Now →</a>
-                <div class="job-tags">
-                    <span class="tag">Contract</span>
-                    <span class="tag">SPED</span>
-                    <span class="tag">401k Match</span>
-                    <span class="tag">Housing Allowance</span>
-                </div>
+                <a href="https://www.indeed.com/viewjob?jk=60b2876ffeb0e8d6" target="_blank" class="apply-btn">Apply →</a>
             </div>
 
             <div class="job-card">
                 <span class="job-number">2</span>
-                <h2 class="job-title">Teacher - ESE Specialized VE</h2>
-                <p class="job-company">Broward County Public Schools</p>
-                <p class="job-location">📍 Lauderhill, FL 33313</p>
-                <p class="job-salary">💰 $34.97+/hour</p>
-                <p class="job-rating">⭐ 3.7/5 (576 reviews)</p>
+                <h2 class="job-title">Master Early Childhood Educator</h2>
+                <p class="job-company">Glendale Community College</p>
+                <p class="job-location">📍 Glendale, CA 91208</p>
+                <p class="job-salary">💰 $5,160 - $6,586/month</p>
+                <p class="job-rating">⭐ 4.5/5</p>
                 <p class="job-posted">🕐 Just posted</p>
-                <a href="https://careers.browardschools.com/job/LAUDERHILL-TEACHER-ESE-SPECIALIZED-VE-FL-33313/18725-en_US/?feedId=389700&utm_source=Indeed" target="_blank" class="apply-btn">Apply Now →</a>
-                <div class="job-tags">
-                    <span class="tag">Public School</span>
-                    <span class="tag">196 Day Calendar</span>
-                    <span class="tag">Florida</span>
-                </div>
+                <a href="https://www.indeed.com/viewjob?jk=f585a743521fcb70" target="_blank" class="apply-btn">Apply →</a>
             </div>
 
             <div class="job-card">
                 <span class="job-number">3</span>
-                <h2 class="job-title">Early Childhood Spanish Teacher - Library & PE</h2>
-                <p class="job-company">International School of Denver</p>
-                <p class="job-location">📍 Denver, CO 80230</p>
-                <p class="job-salary">💰 $48,000 - $68,000/year</p>
-                <p class="job-rating">⭐ 2.9/5 (9 reviews)</p>
-                <p class="job-posted">🕐 Just posted</p>
-                <a href="https://www.indeed.com/viewjob?jk=beb9c74def2296a6" target="_blank" class="apply-btn">Apply Now →</a>
-                <div class="job-tags">
-                    <span class="tag">Full-time</span>
-                    <span class="tag">IB School</span>
-                    <span class="tag">Bilingual</span>
-                    <span class="tag">J-1 Visa Sponsor</span>
-                </div>
+                <h2 class="job-title">Music Teacher (3yr olds + Special Needs)</h2>
+                <p class="job-company">Music Junction</p>
+                <p class="job-location">📍 Burbank, CA 91505</p>
+                <p class="job-salary">💰 $25 - $30/hour</p>
+                <p class="job-rating">⭐ 4.0/5</p>
+                <p class="job-posted">🕐 1 day ago</p>
+                <a href="https://www.indeed.com/viewjob?jk=fdba3a5dbee6821f" target="_blank" class="apply-btn">Apply →</a>
             </div>
-        </div>
 
-        <div style="margin-top: 40px; padding: 30px; background: rgba(0,212,255,0.1); border-radius: 16px; text-align: center;">
-            <h2 style="color: #00d4ff; margin-bottom: 15px;">🔍 Want More Jobs?</h2>
-            <p style="color: #aaa; margin-bottom: 20px;">These are just 3 of thousands available. Search more on these platforms:</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-                <a href="https://www.indeed.com/q-teacher-jobs.html" target="_blank" class="apply-btn">Indeed (147K+ jobs)</a>
-                <a href="https://www.linkedin.com/jobs/teacher-jobs" target="_blank" class="apply-btn">LinkedIn (147K+ jobs)</a>
-                <a href="https://www.edjoin.org/" target="_blank" class="apply-btn">EDJOIN (#1 Education Site)</a>
-                <a href="https://www.schoolspring.com/jobs" target="_blank" class="apply-btn">SchoolSpring (113K jobs)</a>
+            <div class="job-card">
+                <span class="job-number">4</span>
+                <h2 class="job-title">Teacher Assistant - Children & Youth</h2>
+                <p class="job-company">Woodland Hills Community Church</p>
+                <p class="job-location">📍 Woodland Hills, CA 91364</p>
+                <p class="job-salary">💰 From $18/hour</p>
+                <p class="job-posted">🕐 1 day ago</p>
+                <a href="https://www.indeed.com/viewjob?jk=5380bfed7b8825dd" target="_blank" class="apply-btn">Apply →</a>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">5</span>
+                <h2 class="job-title">Preschool Teacher</h2>
+                <p class="job-company">Families Forward Learning Center</p>
+                <p class="job-location">📍 Pasadena, CA 91103</p>
+                <p class="job-salary">💰 $23.00 - $24.50/hour</p>
+                <p class="job-rating">⭐ 3.3/5</p>
+                <p class="job-posted">🕐 1 day ago</p>
+                <a href="https://www.indeed.com/viewjob?jk=ac1a5dc96cf9c418" target="_blank" class="apply-btn">Apply →</a>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">6</span>
+                <h2 class="job-title">Teacher 1</h2>
+                <p class="job-company">UCLA</p>
+                <p class="job-location">📍 Los Angeles, CA 90024</p>
+                <p class="job-salary">💰 $21.24 - $32.94/hour</p>
+                <p class="job-rating">⭐ 4.3/5</p>
+                <p class="job-posted">🕐 Just posted</p>
+                <a href="https://www.indeed.com/viewjob?jk=ceda8b93290efeed" target="_blank" class="apply-btn">Apply →</a>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">7</span>
+                <h2 class="job-title">Substitute Teacher</h2>
+                <p class="job-company">Bright Horizons</p>
+                <p class="job-location">📍 Burbank, CA 91506</p>
+                <p class="job-salary">💰 $21.75 - $26.55/hour</p>
+                <p class="job-rating">⭐ 3.5/5</p>
+                <p class="job-posted">🕐 Just posted</p>
+                <a href="https://www.indeed.com/viewjob?jk=0cd32cfce2cf9fd5" target="_blank" class="apply-btn">Apply →</a>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">8</span>
+                <h2 class="job-title">Toddler Teacher</h2>
+                <p class="job-company">Montana Preschool</p>
+                <p class="job-location">📍 Santa Monica, CA 90403</p>
+                <p class="job-salary">💰 $21 - $23/hour</p>
+                <p class="job-posted">🕐 Just posted</p>
+                <a href="https://www.indeed.com/viewjob?jk=51a4bc7c8802af0a" target="_blank" class="apply-btn">Apply →</a>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">9</span>
+                <h2 class="job-title">Daycare Teacher</h2>
+                <p class="job-company">Roennes School Inc</p>
+                <p class="job-location">📍 Los Angeles, CA 90016</p>
+                <p class="job-salary">💰 $22 - $24/hour</p>
+                <p class="job-posted">🕐 1 day ago</p>
+                <a href="https://www.indeed.com/viewjob?jk=9bcfc86a93f18e8b" target="_blank" class="apply-btn">Apply →</a>
             </div>
         </div>
 
         <div class="powered-by">
-            <p>🤖 Powered by Guardian Angel AI + Apify Web Scraping</p>
-            <p style="color: #888; margin-top: 5px;">Demo for George - Real jobs scraped live from Indeed.com</p>
-            <p style="color: #4ade80; margin-top: 10px; font-size: 0.9rem;">✅ All links verified - Apply directly to real positions</p>
+            <p>🤖 Guardian Angel AI + Apify</p>
+            <p style="color: #888; margin-top: 5px;">Real jobs near 91342 • Click any link to apply</p>
         </div>
 
         <p class="footer">Built with Echo • Eugene's Guardian Angel System</p>
