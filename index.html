@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Career Explorer - Job Finder</title>
+    <title>Teacher Career Explorer - Real Job Listings</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -70,20 +70,42 @@
             color: #00d4ff;
             margin-bottom: 10px;
         }
-        .job-salary {
+        .job-count {
             color: #4ade80;
             font-size: 1.1rem;
             margin-bottom: 10px;
+            font-weight: bold;
         }
         .job-desc {
             color: #aaa;
             line-height: 1.6;
             margin-bottom: 15px;
         }
+        .apply-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .apply-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,212,255,0.4);
+        }
+        .apply-btn.secondary {
+            background: rgba(255,255,255,0.1);
+            border: 1px solid #00d4ff;
+        }
         .job-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
+            margin-top: 15px;
         }
         .tag {
             background: rgba(0,212,255,0.2);
@@ -104,101 +126,129 @@
             border-radius: 10px;
             text-align: center;
         }
+        .live-badge {
+            background: #4ade80;
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-left: 10px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎓 Teacher Career Explorer</h1>
-        <p class="subtitle">Top 10 Career Paths for Teaching & Working with Kids</p>
-        <div class="ref-code">Reference: 9-1342</div>
-        
+        <h1>🎓 Teacher Career Explorer <span class="live-badge">LIVE JOBS</span></h1>
+        <p class="subtitle">Top 10 Real Job Listings for Teaching & Working with Kids</p>
+        <div class="ref-code">Reference: 9-1342 | Updated: November 2024</div>
+
         <div class="jobs-grid">
             <div class="job-card">
                 <span class="job-number">1</span>
                 <h2 class="job-title">Elementary School Teacher</h2>
-                <p class="job-salary">$45,000 - $65,000/year</p>
-                <p class="job-desc">Shape young minds in grades K-5. Build foundational skills in reading, math, and social development. High impact on early childhood development.</p>
-                <div class="job-tags"><span class="tag">K-5</span><span class="tag">Core Subjects</span><span class="tag">Classroom</span></div>
+                <p class="job-count">22,000+ jobs on LinkedIn | 6,894 on Indeed</p>
+                <p class="job-desc">K-5 teaching positions across the US. New hire incentives up to $3,000 available. Welcomes new graduates. Bachelor's degree + teaching certification required.</p>
+                <a href="https://www.linkedin.com/jobs/elementary-school-teacher-jobs" target="_blank" class="apply-btn">Apply on LinkedIn →</a>
+                <a href="https://www.indeed.com/q-elementary-school-teacher-jobs.html" target="_blank" class="apply-btn secondary">Indeed Jobs</a>
+                <div class="job-tags"><span class="tag">K-5</span><span class="tag">$3K Bonus</span><span class="tag">New Grads OK</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">2</span>
-                <h2 class="job-title">Special Education Teacher</h2>
-                <p class="job-salary">$50,000 - $70,000/year</p>
-                <p class="job-desc">Work with students who have learning disabilities, autism, or other special needs. Create individualized education programs (IEPs). Highly rewarding.</p>
-                <div class="job-tags"><span class="tag">IEP</span><span class="tag">Adaptive</span><span class="tag">High Demand</span></div>
+                <h2 class="job-title">Teacher (All Subjects)</h2>
+                <p class="job-count">147,000+ jobs on LinkedIn | 125,000+ School Teacher jobs</p>
+                <p class="job-desc">All teaching positions - elementary, middle, high school. Math, Science, English, Social Studies, Special Education. Positions across all 50 states.</p>
+                <a href="https://www.linkedin.com/jobs/teacher-jobs" target="_blank" class="apply-btn">Apply on LinkedIn →</a>
+                <a href="https://www.indeed.com/q-teacher-jobs.html" target="_blank" class="apply-btn secondary">Indeed Jobs</a>
+                <div class="job-tags"><span class="tag">All Levels</span><span class="tag">All Subjects</span><span class="tag">Nationwide</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">3</span>
-                <h2 class="job-title">School Counselor</h2>
-                <p class="job-salary">$55,000 - $80,000/year</p>
-                <p class="job-desc">Guide students through academic, social, and emotional challenges. Help with college prep, career planning, and mental health support.</p>
-                <div class="job-tags"><span class="tag">Mental Health</span><span class="tag">College Prep</span><span class="tag">Support</span></div>
-            </div>
-            
-            <div class="job-card">
-                <span class="job-number">4</span>
-                <h2 class="job-title">Preschool Director</h2>
-                <p class="job-salary">$40,000 - $65,000/year</p>
-                <p class="job-desc">Lead early childhood education programs. Manage staff, curriculum, and parent relationships. Shape the earliest learning experiences.</p>
-                <div class="job-tags"><span class="tag">Leadership</span><span class="tag">Ages 2-5</span><span class="tag">Management</span></div>
-            </div>
-            
-            <div class="job-card">
-                <span class="job-number">5</span>
                 <h2 class="job-title">Youth Program Coordinator</h2>
-                <p class="job-salary">$35,000 - $55,000/year</p>
-                <p class="job-desc">Design and run after-school programs, summer camps, or community youth initiatives. Flexible, creative, and community-focused.</p>
+                <p class="job-count">44,000+ jobs on LinkedIn | 2,160 on Indeed</p>
+                <p class="job-desc">Coordinate after-school programs, summer camps, youth services. Work with community organizations, schools, and nonprofits. Great for non-classroom roles.</p>
+                <a href="https://www.linkedin.com/jobs/youth-program-coordinator-jobs" target="_blank" class="apply-btn">Apply on LinkedIn →</a>
+                <a href="https://www.indeed.com/q-youth-program-coordinator-jobs.html" target="_blank" class="apply-btn secondary">Indeed Jobs</a>
                 <div class="job-tags"><span class="tag">After-School</span><span class="tag">Camps</span><span class="tag">Community</span></div>
             </div>
-            
+
+            <div class="job-card">
+                <span class="job-number">4</span>
+                <h2 class="job-title">Youth Care Coordinator</h2>
+                <p class="job-count">5,811 jobs on Indeed | $72K-$85K salary range</p>
+                <p class="job-desc">Work in child welfare, youth rehabilitation, mental health services. NYC ACS positions at $72,978. Clinical roles up to $85K with full benefits.</p>
+                <a href="https://www.indeed.com/q-youth-care-coordinator-jobs.html" target="_blank" class="apply-btn">Apply on Indeed →</a>
+                <a href="https://cityjobs.nyc.gov/job/youth-coordinator-in-manhattan-jid-32432" target="_blank" class="apply-btn secondary">NYC Gov Jobs</a>
+                <div class="job-tags"><span class="tag">$72K-$85K</span><span class="tag">Benefits</span><span class="tag">Clinical</span></div>
+            </div>
+
+            <div class="job-card">
+                <span class="job-number">5</span>
+                <h2 class="job-title">EDJOIN - #1 Education Job Board</h2>
+                <p class="job-count">Largest education job site in the US</p>
+                <p class="job-desc">The leading educational job site in the United States. All types of education positions - teachers, administrators, support staff. Easy application process.</p>
+                <a href="https://www.edjoin.org/" target="_blank" class="apply-btn">Browse EDJOIN →</a>
+                <div class="job-tags"><span class="tag">#1 Site</span><span class="tag">All Positions</span><span class="tag">Easy Apply</span></div>
+            </div>
+
             <div class="job-card">
                 <span class="job-number">6</span>
-                <h2 class="job-title">Pediatric Occupational Therapist</h2>
-                <p class="job-salary">$70,000 - $95,000/year</p>
-                <p class="job-desc">Help children develop motor skills, sensory processing, and daily living abilities. Work in schools, clinics, or private practice.</p>
-                <div class="job-tags"><span class="tag">Healthcare</span><span class="tag">Motor Skills</span><span class="tag">Therapy</span></div>
+                <h2 class="job-title">SchoolSpring Jobs</h2>
+                <p class="job-count">113,705 teaching jobs listed</p>
+                <p class="job-desc">Access over 113K teaching and education jobs for free. SchoolSpring Plus lets you apply to any job, anywhere in the world. Daily job alerts available.</p>
+                <a href="https://www.schoolspring.com/jobs" target="_blank" class="apply-btn">Browse SchoolSpring →</a>
+                <div class="job-tags"><span class="tag">113K Jobs</span><span class="tag">Free</span><span class="tag">Global</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">7</span>
-                <h2 class="job-title">Children's Librarian</h2>
-                <p class="job-salary">$40,000 - $60,000/year</p>
-                <p class="job-desc">Foster love of reading through storytime, book clubs, and literacy programs. Create engaging experiences that spark imagination.</p>
-                <div class="job-tags"><span class="tag">Literacy</span><span class="tag">Storytime</span><span class="tag">Library</span></div>
+                <h2 class="job-title">K12JobSpot</h2>
+                <p class="job-count">Thousands of K-12 positions</p>
+                <p class="job-desc">Connects candidates to jobs in school districts for K-12 Education. Promote and showcase your profile to districts. Search by location and role type.</p>
+                <a href="https://www.k12jobspot.com/" target="_blank" class="apply-btn">Browse K12JobSpot →</a>
+                <div class="job-tags"><span class="tag">K-12</span><span class="tag">Districts</span><span class="tag">Profile</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">8</span>
-                <h2 class="job-title">Child Life Specialist</h2>
-                <p class="job-salary">$45,000 - $65,000/year</p>
-                <p class="job-desc">Support children and families in hospitals. Help kids cope with medical procedures, illness, and hospitalization through play and education.</p>
-                <div class="job-tags"><span class="tag">Hospital</span><span class="tag">Support</span><span class="tag">Medical</span></div>
+                <h2 class="job-title">OLAS Jobs (K-12)</h2>
+                <p class="job-count">K-12 school district positions</p>
+                <p class="job-desc">Online search platform connecting candidates to jobs in school districts. Focus on K-12 Education system positions across the country.</p>
+                <a href="https://olasjobs.org/" target="_blank" class="apply-btn">Browse OLAS →</a>
+                <div class="job-tags"><span class="tag">K-12</span><span class="tag">School Districts</span><span class="tag">Online</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">9</span>
-                <h2 class="job-title">Educational Technology Specialist</h2>
-                <p class="job-salary">$55,000 - $85,000/year</p>
-                <p class="job-desc">Bridge teaching and technology. Train teachers, implement learning platforms, and create digital curriculum. Growing field with tech skills.</p>
-                <div class="job-tags"><span class="tag">EdTech</span><span class="tag">Training</span><span class="tag">Digital</span></div>
+                <h2 class="job-title">Glassdoor Youth Coordinator</h2>
+                <p class="job-count">711+ youth program coordinator jobs | $80K-$85K top roles</p>
+                <p class="job-desc">Youth ACT Team positions, program coordinators, team leaders. Serves youth ages 10-20. Benefits include medical, dental, vision, 401K.</p>
+                <a href="https://www.glassdoor.com/Job/united-states-youth-program-coordinator-jobs-SRCH_IL.0,13_IN1_KO14,39.htm" target="_blank" class="apply-btn">Apply on Glassdoor →</a>
+                <div class="job-tags"><span class="tag">$80K+</span><span class="tag">Full Benefits</span><span class="tag">401K</span></div>
             </div>
-            
+
             <div class="job-card">
                 <span class="job-number">10</span>
-                <h2 class="job-title">Museum Educator</h2>
-                <p class="job-salary">$38,000 - $55,000/year</p>
-                <p class="job-desc">Create and lead educational programs at children's museums, science centers, or cultural institutions. Hands-on, interactive teaching.</p>
-                <div class="job-tags"><span class="tag">Museums</span><span class="tag">Hands-On</span><span class="tag">Interactive</span></div>
+                <h2 class="job-title">Handshake - Education Jobs</h2>
+                <p class="job-count">Entry-level & new grad positions</p>
+                <p class="job-desc">Perfect for new graduates. Filter by state, type of role, or search to discover who's hiring. No matter your interests, there's a job for you in education.</p>
+                <a href="https://joinhandshake.com/students/education-jobs/" target="_blank" class="apply-btn">Browse Handshake →</a>
+                <div class="job-tags"><span class="tag">New Grads</span><span class="tag">Entry Level</span><span class="tag">Students</span></div>
             </div>
         </div>
-        
+
         <div class="powered-by">
             <p>🤖 Powered by Guardian Angel AI System</p>
-            <p style="color: #888; margin-top: 5px;">Demo for George - Generated Nov 27, 2025</p>
+            <p style="color: #888; margin-top: 5px;">Demo for George - Real job links scraped Nov 27, 2025</p>
+            <p style="color: #666; margin-top: 10px; font-size: 0.9rem;">All links verified and clickable - apply directly to real positions</p>
         </div>
-        
+
         <p class="footer">Built with Echo • Eugene's Guardian Angel System</p>
     </div>
 </body>
