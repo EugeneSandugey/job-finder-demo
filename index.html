@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Career Explorer - Job Finder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+        .ref-code {
+            text-align: center;
+            background: rgba(123, 44, 191, 0.3);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-family: monospace;
+            font-size: 1.2rem;
+        }
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .job-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,212,255,0.2);
+        }
+        .job-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .job-title {
+            font-size: 1.4rem;
+            color: #00d4ff;
+            margin-bottom: 10px;
+        }
+        .job-salary {
+            color: #4ade80;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .job-desc {
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .tag {
+            background: rgba(0,212,255,0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #00d4ff;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+        }
+        .powered-by {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(123, 44, 191, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Teacher Career Explorer</h1>
+        <p class="subtitle">Top 10 Career Paths for Teaching & Working with Kids</p>
+        <div class="ref-code">Reference: 9-1342</div>
+        
+        <div class="jobs-grid">
+            <div class="job-card">
+                <span class="job-number">1</span>
+                <h2 class="job-title">Elementary School Teacher</h2>
+                <p class="job-salary">$45,000 - $65,000/year</p>
+                <p class="job-desc">Shape young minds in grades K-5. Build foundational skills in reading, math, and social development. High impact on early childhood development.</p>
+                <div class="job-tags"><span class="tag">K-5</span><span class="tag">Core Subjects</span><span class="tag">Classroom</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">2</span>
+                <h2 class="job-title">Special Education Teacher</h2>
+                <p class="job-salary">$50,000 - $70,000/year</p>
+                <p class="job-desc">Work with students who have learning disabilities, autism, or other special needs. Create individualized education programs (IEPs). Highly rewarding.</p>
+                <div class="job-tags"><span class="tag">IEP</span><span class="tag">Adaptive</span><span class="tag">High Demand</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">3</span>
+                <h2 class="job-title">School Counselor</h2>
+                <p class="job-salary">$55,000 - $80,000/year</p>
+                <p class="job-desc">Guide students through academic, social, and emotional challenges. Help with college prep, career planning, and mental health support.</p>
+                <div class="job-tags"><span class="tag">Mental Health</span><span class="tag">College Prep</span><span class="tag">Support</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">4</span>
+                <h2 class="job-title">Preschool Director</h2>
+                <p class="job-salary">$40,000 - $65,000/year</p>
+                <p class="job-desc">Lead early childhood education programs. Manage staff, curriculum, and parent relationships. Shape the earliest learning experiences.</p>
+                <div class="job-tags"><span class="tag">Leadership</span><span class="tag">Ages 2-5</span><span class="tag">Management</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">5</span>
+                <h2 class="job-title">Youth Program Coordinator</h2>
+                <p class="job-salary">$35,000 - $55,000/year</p>
+                <p class="job-desc">Design and run after-school programs, summer camps, or community youth initiatives. Flexible, creative, and community-focused.</p>
+                <div class="job-tags"><span class="tag">After-School</span><span class="tag">Camps</span><span class="tag">Community</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">6</span>
+                <h2 class="job-title">Pediatric Occupational Therapist</h2>
+                <p class="job-salary">$70,000 - $95,000/year</p>
+                <p class="job-desc">Help children develop motor skills, sensory processing, and daily living abilities. Work in schools, clinics, or private practice.</p>
+                <div class="job-tags"><span class="tag">Healthcare</span><span class="tag">Motor Skills</span><span class="tag">Therapy</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">7</span>
+                <h2 class="job-title">Children's Librarian</h2>
+                <p class="job-salary">$40,000 - $60,000/year</p>
+                <p class="job-desc">Foster love of reading through storytime, book clubs, and literacy programs. Create engaging experiences that spark imagination.</p>
+                <div class="job-tags"><span class="tag">Literacy</span><span class="tag">Storytime</span><span class="tag">Library</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">8</span>
+                <h2 class="job-title">Child Life Specialist</h2>
+                <p class="job-salary">$45,000 - $65,000/year</p>
+                <p class="job-desc">Support children and families in hospitals. Help kids cope with medical procedures, illness, and hospitalization through play and education.</p>
+                <div class="job-tags"><span class="tag">Hospital</span><span class="tag">Support</span><span class="tag">Medical</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">9</span>
+                <h2 class="job-title">Educational Technology Specialist</h2>
+                <p class="job-salary">$55,000 - $85,000/year</p>
+                <p class="job-desc">Bridge teaching and technology. Train teachers, implement learning platforms, and create digital curriculum. Growing field with tech skills.</p>
+                <div class="job-tags"><span class="tag">EdTech</span><span class="tag">Training</span><span class="tag">Digital</span></div>
+            </div>
+            
+            <div class="job-card">
+                <span class="job-number">10</span>
+                <h2 class="job-title">Museum Educator</h2>
+                <p class="job-salary">$38,000 - $55,000/year</p>
+                <p class="job-desc">Create and lead educational programs at children's museums, science centers, or cultural institutions. Hands-on, interactive teaching.</p>
+                <div class="job-tags"><span class="tag">Museums</span><span class="tag">Hands-On</span><span class="tag">Interactive</span></div>
+            </div>
+        </div>
+        
+        <div class="powered-by">
+            <p>🤖 Powered by Guardian Angel AI System</p>
+            <p style="color: #888; margin-top: 5px;">Demo for George - Generated Nov 27, 2025</p>
+        </div>
+        
+        <p class="footer">Built with Echo • Eugene's Guardian Angel System</p>
+    </div>
+</body>
+</html>
